@@ -1,0 +1,22 @@
+GameProject {
+ ID "ConflictDominationPVE"
+ GUID "647CB65DADE9ECF6"
+ TITLE "ConflictDominationPVE"
+ Dependencies {
+  "61B514B96692C049" "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}
