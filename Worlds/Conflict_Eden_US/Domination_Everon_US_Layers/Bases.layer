@@ -26,6 +26,7 @@ GenericEntity : "{0A36F69A7D518F10}Prefabs/Compositions/Locations/Eden/Base_Mili
   SCR_SpawnPoint {
    ID "5E6ACA2F09C2D12F"
    Flags 1048579
+   m_bSpawnPointEnabled 0
   }
  }
 }
@@ -52,6 +53,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 8.05 -0.001 11.999
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     AirfieldCounter1 {
@@ -158,6 +163,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -17.763 -0.992 12
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     LevieMilitaryCounter1 {
      components {
@@ -239,6 +248,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 13.096 -0.092 13.384
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity CalvaryHillCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -287,6 +300,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "606078EE23DE48AC"
     coords -19.851 -13.839 157.664
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MilitaryHospitalCounter1 {
@@ -373,6 +390,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity ChotainMilitaryCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -428,6 +446,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     LamentinCounter1 {
@@ -512,6 +531,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MortonCounter1 {
@@ -596,6 +616,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
+    m_bUseNearbySpawnPositions 0
     m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
@@ -706,6 +727,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 23.693 -0.078 11.999
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     StPierreCounter1 {
      components {
@@ -814,6 +839,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -10.649 -1.022 25.386
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity QuarryCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -862,6 +891,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   angleY 30.644
   angleZ -0.842
   {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity BlackLakeCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -911,6 +944,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords -0.001 0.026 12
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity PennantsPassCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -964,6 +1001,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 18.656 0.86 12
     angleY -162.033
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity SimonsWoodCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -1019,6 +1060,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "606078EE23DE48AC"
     coords 0 0.431 14
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity MortonValleyCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1068,6 +1113,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 0.001 -0.289 15
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     ShepherdsPondCounter1 {
@@ -1152,6 +1201,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     coords -6.675 0.222 -0.117
     angleY 35.382
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     PinewoodLakeCounter1 {
@@ -1229,6 +1279,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   coords 3789.583 59.781 6997.688
   angleY -49.512
   {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity TillersFindCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1279,6 +1333,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords -9.604 0.072 17.477
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MaidensBayCounter1 {
@@ -1358,6 +1416,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 0 -2.892 12
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity HornbeamValleyCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1411,6 +1473,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 0.033 -0.806 15.858
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity AndresBeaconCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1457,6 +1523,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   coords 6635.185 5.902 3119.359
   angleY 169.959
   {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity GoatBayCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1509,6 +1579,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 0 -0.358 11.985
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     ChotainCounter1 {
@@ -1591,6 +1665,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 10.221 0.496 1.887
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity DurrasCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1645,6 +1723,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0.913 0.245 22.299
     angleY -153.647
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity EntreDeuxCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1696,6 +1778,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 15.965 1.098 33.846
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity FigariCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1746,6 +1832,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 0.001 -1.247 24.578
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity LarunsCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -1800,6 +1890,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -12.977 1.592 26.599
     angleY 177.758
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     LeMouleCounter1 {
@@ -1880,6 +1974,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -0.001 -0.186 11.986
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity LevieCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -1933,6 +2031,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 10.349 -0.384 37.928
     angleY -146.665
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MeauxCounter1 {
@@ -2015,6 +2117,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -0.009 -0.304 15.059
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MontignacCounter1 {
      components {
@@ -2095,6 +2201,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 13.098 0.789 0.833
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     ProvinsCounter1 {
@@ -2177,6 +2287,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords -9.897 0.152 18.123
     angleY -56.707
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     ReginaCounter1 {
      components {
@@ -2255,6 +2369,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords -5.795 -0.264 15
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     TyroneCounter1 {
@@ -2338,6 +2456,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords -0.019 -0.559 29.82
     angleY -177.463
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity VernonCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -2391,6 +2513,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords -5.898 -1.285 23.886
     angleY -20.893
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity VilleneufCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -2442,6 +2568,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 14.754 1.173 15
     angleY 89.983
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity GravetteCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2495,6 +2625,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 8.54 -0.322 18.685
     angleY 131.656
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
   }
  }
  SmallBaseLesCreux {
@@ -2523,6 +2657,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity LesCreuxCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2579,6 +2714,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0.001 0
+    m_bSpawnPointEnabled 0
    }
   }
  }
@@ -2608,6 +2744,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity RedonCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2656,6 +2793,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   coords 2482.494 10.406 4232.124
   angleY 142.609
   {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity KervelCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -2711,6 +2852,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity FiringRangeCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2765,6 +2907,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity BenacCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2812,6 +2955,12 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   }
   coords 7463.339 3.435 9524.696
   angleY 142.609
+  {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+  }
  }
  SmallBasePerelle {
   components {
@@ -2839,6 +2988,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "606078EE23DE48AC"
     coords -16.051 -1.336 8.446
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity PerelleCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -2895,6 +3048,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "606078EE23DE48AC"
     coords -0.001 2.362 14
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity LancreCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -2947,6 +3104,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -20.12 -2.159 22.29
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity CaveCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -2996,6 +3157,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords -19.216 2.345 -0.409
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity ChevalGinLodgeCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3049,6 +3214,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords -23.767 -1.094 -7.179
     angleY -36.701
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity GhostTownCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -3099,6 +3268,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 0 -2.819 46.761
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
   }
  }
  SmallBaseLaRoueBay {
@@ -3120,6 +3293,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   coords 9329.601 16.333 317.23
   angleY 142.609
   {
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity LaRoueCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -3176,6 +3353,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "606078EE23DE48AC"
     coords -10.394 7.488 24.525
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     MontfortCastleCounter1 {
@@ -3256,6 +3437,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords 14.833 -2.58 -0.795
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
    GenericEntity RockweedCapeCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
@@ -3307,6 +3492,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords -28.216 2.349 21.628
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity LeBoscCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3373,6 +3562,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     }
     coords -36.254 0.018 14
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
   }
  }
  SmallBaseArgent {
@@ -3398,6 +3591,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5CCED514A5908822"
     coords -14.434 -2.529 -7.072
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
   }
  }
  SmallBaseErquy {
@@ -3415,6 +3612,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    GenericEntity {
     ID "5CCED514A5908822"
     coords 17.94 -0.269 -23.49
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
    }
    GenericEntity IslandErquyCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3463,6 +3664,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "606078EE23DE48AC"
     coords -0.001 -0.411 14
    }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
   }
  }
  SmallBaseEtoupeGasStation {
@@ -3488,7 +3693,6 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 36.82 0.038 23.697
    }
    GenericEntity {
-    ID "5EEEC471C30578EB"
     coords -2 -0.705 -3.001
    }
    GenericEntity {
@@ -3498,6 +3702,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0.001 -0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity EtoupeGasStationCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3554,6 +3759,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.002 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity SmugglersHoleCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3610,6 +3816,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
   }
  }
@@ -3639,6 +3846,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity FishermansCoveCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3697,6 +3905,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity CourbetCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3752,6 +3961,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     PowerPlantCounter1 {
@@ -3835,6 +4045,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity CragPointCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3895,6 +4106,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0.001 0
+    m_bSpawnPointEnabled 0
    }
    GenericEntity SkuaPointCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     components {
@@ -3951,12 +4163,12 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords -19.851 -13.409 148.463
    }
    GenericEntity {
-    ID "5EEEC471C30578EB"
     coords -2 -0.364 -3
    }
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 0 0
+    m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
     WesternHeightsCounter1 {
@@ -4130,6 +4342,7 @@ GenericEntity : "{1A7FB3493A1B029F}Prefabs/Compositions/Locations/Eden/Base_Levi
     SCR_SpawnPoint {
      ID "5E6ACA2FF8E39F2B"
      Flags 1048579
+     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -4522,9 +4735,9 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
        m_eGroupType FIRETEAM
       }
      }
+     Flags 524291
      coords 32.212 -16.815 -2.337
      angleY 90.08
-     Flags 524291
     }
     {
      components {
@@ -4533,9 +4746,9 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
        m_eGroupType FIRETEAM
       }
      }
+     Flags 524291
      coords 25.388 -16.912 -2.377
      angleY 87.933
-     Flags 524291
     }
     {
      components {
@@ -4544,9 +4757,9 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
        m_eGroupType FIRETEAM
       }
      }
+     Flags 524291
      coords 27.781 -16.996 -12.149
      angleY 87.442
-     Flags 524291
     }
     {
      components {
@@ -4555,9 +4768,9 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
        m_eGroupType FIRETEAM
       }
      }
+     Flags 524291
      coords 36.298 -11.112 -0.643
      angleY 0.156
-     Flags 524291
     }
     {
      components {
@@ -4566,9 +4779,9 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
        m_eGroupType FIRETEAM
       }
      }
+     Flags 524291
      coords 45.052 -16.899 1.171
      angleY -1.402
-     Flags 524291
     }
     EasternSeaRelay01 {
      components {
@@ -4705,7 +4918,7 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
      angleY 0
     }
    }
-   $grp GenericEntity : "{E62ED30ECB655576}PrefabLibrary/Infrastructure/Naval/BreakwaterStone_01_stack_wall.et" {
+   $grp SCR_IndestructibleEnvironmentalEntity : "{E62ED30ECB655576}PrefabLibrary/Infrastructure/Naval/BreakwaterStone_01_stack_wall.et" {
     {
      coords 9.737 -32.208 0.803
      angleY -90
@@ -4915,6 +5128,15 @@ GenericEntity : "{567515087F8ED05F}Prefabs/Compositions/Locations/Eden/Base_Lame
     }
    }
   }
+  GenericEntity {
+   ID "5E6ACA2FCDBBBC12"
+   {
+    SCR_SpawnPoint {
+     ID "5E6ACA2FF8E39F2B"
+     m_bSpawnPointEnabled 0
+    }
+   }
+  }
  }
 }
 GenericEntity : "{A9F3C4994839F7A4}Prefabs/Compositions/Locations/Eden/Base_StPierreHarbour_FIA_01.et" {
@@ -4975,6 +5197,7 @@ GenericEntity : "{A9F3C4994839F7A4}Prefabs/Compositions/Locations/Eden/Base_StPi
     SCR_SpawnPoint {
      ID "5E6ACA2FF8E39F2B"
      Flags 1048579
+     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -5025,6 +5248,7 @@ GenericEntity : "{D3BED8377828FFCC}Prefabs/Compositions/Locations/Eden/Base_Powe
     SCR_SpawnPoint {
      ID "5E6ACA2FF01AEC42"
      Flags 1048579
+     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -5101,6 +5325,7 @@ GenericEntity : "{FB04C4D5947808F1}Prefabs/Compositions/Locations/Eden/Base_Mont
   SCR_SpawnPoint {
    ID "5E6B01A974EBE91B"
    Flags 1048579
+   m_bSpawnPointEnabled 0
   }
  }
 }
