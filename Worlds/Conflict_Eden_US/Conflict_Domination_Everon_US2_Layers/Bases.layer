@@ -26,7 +26,6 @@ GenericEntity : "{0A36F69A7D518F10}Prefabs/Compositions/Locations/Eden/Base_Mili
   SCR_SpawnPoint {
    ID "5E6ACA2F09C2D12F"
    Flags 1048579
-   m_bSpawnPointEnabled 0
   }
  }
 }
@@ -44,7 +43,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationAirport"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 150
+    m_iRadius 175
    }
   }
   coords 4915.073 28.594 11855.36
@@ -95,7 +94,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords 516.861 -17.921 -158.218
+     coords 463.089 -5.393 -158.234
      angleX -6.49
      angleY 179.937
      angleZ 0.391
@@ -105,7 +104,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 500.638 -10.629 -282.007
+       coords 449.827 -12.635 -185.764
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -153,7 +152,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationLevie_MilitaryBase"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 125
+    m_iRadius 150
    }
   }
   coords 7518.644 166.752 4265.595
@@ -178,7 +177,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 7
       }
      }
-     coords -330.767 -29.746 -253.267
+     coords -302.51 -17.448 -128.426
      angleX -6.49
      angleY -17.746
      angleZ 0.391
@@ -188,7 +187,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 377.699 48.623 150.367
+       coords 326.204 40.991 45.805
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -204,7 +203,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -359.747 -45.376 64.701
+     coords 315.559 5.449 274.03
      angleX -6.49
      angleY -17.746
      angleZ 0.391
@@ -214,7 +213,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 338.274 28.24 -174.321
+       coords -432.566 -25.355 -129.078
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -236,7 +235,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationMilitaryBase_AA"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 100
+    m_iRadius 125
    }
   }
   coords 3512.013 181.915 5816.282
@@ -252,29 +251,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity CalvaryHillCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 5
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    CalvaryHillCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 5
+      }
+     }
+     coords 299.346 -94.003 -325.034
+     angleX -10.244
+     angleY 119.24
+     angleZ 3.231
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -139.539 9.612 -431.874
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 75
+      }
      }
     }
-    coords 293.877 -93.928 -318.949
-    angleX -10.244
-    angleY 119.24
-    angleZ 3.231
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    CalvaryHillArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -139.538 9.462 -431.857
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+     coords 588.84 -79.228 217.11
+     angleX 5.519
+     angleY -5.757
+     angleZ 3.112
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -612.593 60.281 -144.122
+       CompletionRadius 40
+      }
      }
     }
    }
@@ -282,12 +306,18 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  }
  MilitaryHospital {
   components {
+   SCR_CampaignBuildingProviderComponent "{64AC3B5A567F5AFF}" {
+    m_fBuildingRadius 150
+   }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 160
     m_bIsControlPoint 1
     m_sBaseName "#AR-MapLocation_MilitaryHospital"
     m_sBaseNameUpper "#AR-Campaign_MapLocation_MilitaryHospital-UC"
     m_sMapLocationName "LocationTyrone_MilitaryHospital"
+   }
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 150
    }
   }
   coords 3867.375 14.906 8486.563
@@ -343,7 +373,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -373.565 52.05 178.921
+     coords -267.276 40.303 192.127
      angleX -6.49
      angleY 172.909
      angleZ 0.391
@@ -353,7 +383,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -350.32 -31.642 199.884
+       coords -244.226 -19.849 193.258
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
        CompletionRadius 60
@@ -376,7 +406,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationChotain_MilitaryBase"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 100
+    m_iRadius 125
    }
   }
   coords 7462.489 7.867 6700.641
@@ -433,7 +463,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationLamentin_Harbour"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 200
+    m_iRadius 225
    }
   }
   coords 1204.166 35.034 5984.738
@@ -501,6 +531,83 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       }
      }
     }
+    LamentinArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 735.631 19.888 422.917
+     angleX 1.057
+     angleY 160.31
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 761.375 5.321 62.114
+       CompletionRadius 120
+      }
+     }
+    }
+    LamentinArty02 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 249.888 22.978 665.919
+     angleX 1.057
+     angleY 160.31
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 433.337 -16.064 449.365
+       CompletionRadius 110
+      }
+     }
+    }
+    Lamentin_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords -1.901 2.029 74.528
+     angleY -70.115
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 31.792 0.093 -28.512
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
    }
   }
  }
@@ -517,7 +624,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationMorton"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 150
+    m_iRadius 175
    }
   }
   coords 5035.522 15.382 4000.177
@@ -544,7 +651,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords -181.807 94.062 -398.713
+     coords -189.206 94.506 -299.922
      angleX -6.49
      angleY 175.717
      angleZ 0.391
@@ -554,7 +661,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -193.969 -141.87 -401.413
+       coords -181.756 -134.209 -325.19
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
        CompletionRadius 150
@@ -571,7 +678,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords 618.007 14.335 299.886
+     coords 489.154 34.969 290.335
      angleX -6.49
      angleY 175.717
      angleZ 0.391
@@ -581,9 +688,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 763.733 17.983 248.875
+       coords 562.684 -6.058 229.131
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    MortonArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -774.795 -13.937 62.469
+     angleX 1.057
+     angleY 50.223
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 510.288 18.353 506.255
+       CompletionRadius 140
+      }
+     }
+    }
+    MortonArty2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 380.687 13.13 533.396
+     angleX 1.057
+     angleY -129.979
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -135.102 -30.684 686.466
+       CompletionRadius 140
+      }
+     }
+    }
+    Morton_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords -89.484 -1.104 2.156
+     angleY 179.798
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -24.59 -0.029 0.138
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -603,7 +787,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationStPhillipe_Harbour"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 200
+    m_iRadius 225
    }
   }
   coords 4458.606 8.968 10916.659
@@ -616,7 +800,6 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"
     coords 0 -0.001 0
-    m_bUseNearbySpawnPositions 0
     m_bSpawnPointEnabled 0
    }
    $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
@@ -630,7 +813,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -459.885 16.486 -549.309
+     coords -335.916 29.093 -478.01
      angleX -6.49
      angleY 5.156
      angleZ 0.391
@@ -640,7 +823,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 404.245 33.216 372.12
+       coords 339.418 22.68 419.892
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
        CompletionRadius 200
@@ -684,7 +867,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -468.885 -2.712 -302.211
+     coords 504.385 25.45 -314.624
      angleX -6.49
      angleY 5.156
      angleZ 0.391
@@ -694,10 +877,153 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 580.736 51.568 289.284
+       coords -502.735 -8.573 165.339
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
        CompletionRadius 200
+      }
+     }
+    }
+    StPhillipeArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 226.581 5.582 -728.122
+     angleX 1.057
+     angleY -120.338
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 735.963 21.622 -206.587
+       CompletionRadius 160
+      }
+     }
+    }
+    StPhillipeArty2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 599.778 27.653 43.2
+     angleX 1.057
+     angleY -111.101
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 25.612 -30.207 596.324
+       CompletionRadius 160
+      }
+     }
+    }
+    StPhillipe_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 63.711 5.697 -16.738
+     angleY 9.237
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -10.242 -0.205 7.881
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    StPhillipe_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords -86.846 2.331 -208.108
+     angleY 9.237
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 8.644 -0.243 14.937
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    StPhillipe_CIV_3 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 89.3 6.403 -446.584
+     angleY -147.294
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 42.833 0.753 -9.282
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -717,7 +1043,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sMapLocationName "LocationStPierre_Harbour"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 150
+    m_iRadius 175
    }
   }
   coords 10127.863 2.525 1524.779
@@ -731,86 +1057,30 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    StPierreCounter1 {
-     components {
-      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-       m_eGroupType FIRETEAM
-       m_iRespawnPeriod 30
-       m_fAILimitThreshold 0.95
-       m_iRespawnWaves 2
-       m_iGroupMultiplier 6
-      }
-     }
-     coords -406.96 16.653 131.631
-     angleX -6.49
-     angleY 72.572
-     angleZ 0.391
-     {
-      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-       components {
-        Hierarchy "{5CD0765889102122}" {
-        }
-       }
-       coords -154.381 37.489 410.444
-       angleY -54.336
-       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-       CompletionRadius 200
-      }
+   GenericEntity MainBaseSouthCounter01 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    components {
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      m_eGroupType FIRETEAM
+      m_iRespawnPeriod 30
+      m_fAILimitThreshold 0.95
+      m_iRespawnWaves 4
+      m_iGroupMultiplier 5
      }
     }
-    StPierreCounter2 {
-     components {
-      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-       m_eGroupType FIRETEAM
-       m_iRespawnPeriod 30
-       m_fAILimitThreshold 0.95
-       m_iRespawnWaves 4
-       m_iGroupMultiplier 5
-      }
-     }
-     coords 257.071 28.001 -192.386
-     angleX -6.49
-     angleY 72.572
-     angleZ 0.391
-     {
-      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-       components {
-        Hierarchy "{5CD0765889102122}" {
-        }
+    coords 230.641 19.907 -200.683
+    angleX -6.49
+    angleY 72.572
+    angleZ 0.391
+    {
+     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+      components {
+       Hierarchy "{5CD0765889102122}" {
        }
-       coords -381.64 -50.293 -167.455
-       angleY -54.336
-       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-       CompletionRadius 200
       }
-     }
-    }
-    StPierreCounter3 {
-     components {
-      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-       m_eGroupType FIRETEAM
-       m_iRespawnPeriod 30
-       m_fAILimitThreshold 0.95
-       m_iRespawnWaves 3
-       m_iGroupMultiplier 4
-      }
-     }
-     coords 354.42 87.307 640.485
-     angleX -6.49
-     angleY 72.572
-     angleZ 0.391
-     {
-      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-       components {
-        Hierarchy "{5CD0765889102122}" {
-        }
-       }
-       coords 131.479 -148.412 -586.763
-       angleY -54.336
-       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-       CompletionRadius 200
-      }
+      coords -390.974 -38.519 -134.926
+      angleY -54.336
+      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 200
      }
     }
    }
@@ -853,7 +1123,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 3
      }
     }
-    coords 71 6.701 233.546
+    coords 76.011 3.284 174.953
     angleX -6.49
     angleY 85.068
     angleZ 0.391
@@ -863,9 +1133,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 238.86 -14.151 -56.59
+      coords 171.429 -11.474 -66.59
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 70
      }
     }
    }
@@ -883,7 +1154,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sBaseNameUpper "#AR-Campaign_MapLocation_BlackLake-UC"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 100
+    m_iRadius 125
    }
   }
   coords 9452.499 209.48 2946.152
@@ -959,7 +1230,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 5
      }
     }
-    coords -303.385 -83.443 -139.862
+    coords -157.148 -40.493 -79.781
     angleX -6.49
     angleY 54.135
     angleZ 0.391
@@ -969,7 +1240,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 75.82 125.22 343.574
+      coords 20.92 62.083 185.107
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       CompletionRadius 40
@@ -1016,7 +1287,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 4
      }
     }
-    coords -246.718 15.369 367.359
+    coords -181.801 23.775 221.855
     angleX -9.655
     angleY 65.918
     angleZ 1.813
@@ -1026,9 +1297,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 431.999 17.831 111.188
+      coords 273.256 3.077 103.378
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 60
      }
     }
    }
@@ -1064,29 +1336,53 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity MortonValleyCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    MortonValleyCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -242.638 14.412 -192.866
+     angleX -6.49
+     angleY 85.301
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -186.326 12.981 252.757
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
      }
     }
-    coords -237.31 18.342 -258.303
-    angleX -6.49
-    angleY 85.301
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    MortonValleyArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -247.685 10.979 267.387
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 60
+     }
+     coords 379.566 -8.237 -489.699
+     angleX 1.057
+     angleY 177.198
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 364.882 28.121 -520.297
+       CompletionRadius 40
+      }
      }
     }
    }
@@ -1129,7 +1425,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -238.043 30.916 391.144
+     coords -115.261 -1.717 311.094
      angleX -6.49
      angleY -146.941
      angleZ 0.391
@@ -1139,9 +1435,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -427.813 -13.319 193.2
+       coords -251.515 25.463 213.714
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
       }
      }
     }
@@ -1155,7 +1452,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords -123.48 -15.926 -403.548
+     coords -38.758 -13.016 -273.382
      angleX -6.49
      angleY -146.941
      angleZ 0.391
@@ -1165,9 +1462,32 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 156.734 -21.769 -368.882
+       coords 135.493 -11.863 -237.989
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
+     }
+    }
+    ShepherdsPondArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 367.534 -52.519 -616.599
+     angleX 1.057
+     angleY 87.565
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -638.736 42.991 -369.997
+       CompletionRadius 75
       }
      }
     }
@@ -1241,7 +1561,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords 257.69 17.336 378.271
+     coords 178.071 0.68 272.645
      angleX -6.49
      angleY 150.415
      angleZ 0.391
@@ -1251,10 +1571,44 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 391.307 6.887 190.218
+       coords 430.337 16.972 138.603
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-       CompletionRadius 70
+       CompletionRadius 65
+      }
+     }
+    }
+    PinewoodLake_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -7.169 -5.567 118.014
+     angleY -2.035
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -7.047 1.302 -37.875
+       angleY -46.938
+       CompletionRadius 50
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -1349,7 +1703,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords 402.217 -16.001 210.012
+     coords 241.542 -2.292 135.526
      angleX -6.49
      angleY 14.518
      angleZ 0.391
@@ -1359,7 +1713,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -249.586 -16.246 -316.068
+       coords -150.542 -16.263 -178.052
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -1375,7 +1729,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -378.293 -18.475 -184.919
+     coords -275.446 -11.434 -158.045
      angleX -6.49
      angleY 14.518
      angleZ 0.391
@@ -1385,7 +1739,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 317.059 50.692 263.914
+       coords 198.817 37.243 216.172
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -1430,7 +1784,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 4
      }
     }
-    coords -132.776 -11.249 419.711
+    coords -116.729 -9.125 312.742
     angleX -6.49
     angleY 34.463
     angleZ 0.391
@@ -1440,7 +1794,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 359.609 -15.644 -258.256
+      coords 278.751 -10.587 -190.272
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       CompletionRadius 75
@@ -1461,7 +1815,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sBaseNameUpper "#AR-Campaign_MapLocation_AndresBeacon-UC"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 125
+    m_iRadius 150
    }
   }
   coords 6970.651 86.463 8271.547
@@ -1477,29 +1831,53 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity AndresBeaconCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    AndresBeaconCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 58.032 -15.258 -305.863
+     angleX -3.676
+     angleY 114.161
+     angleZ -0.169
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -259.046 6.395 -169.108
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 58.032 -15.258 -305.863
-    angleX -3.676
-    angleY 114.161
-    angleZ -0.169
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    AndresBeaconArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -259.046 6.395 -169.108
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+     coords -352.668 31.018 515.278
+     angleX 8.315
+     angleY 112.358
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 355.605 -91.105 505.172
+       CompletionRadius 50
+      }
      }
     }
    }
@@ -1527,29 +1905,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity GoatBayCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    GoatBayCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -155.736 58.509 294.968
+     angleX -6.49
+     angleY -174.04
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -202.148 -29.348 277.819
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
      }
     }
-    coords -303.461 103.465 333.776
-    angleX -6.49
-    angleY -174.04
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    GoatBayArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -305.834 -69.38 298.626
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+     coords -372.388 40.095 -302.198
+     angleX 8.315
+     angleY -162.754
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -306.198 6.167 -408.577
+       CompletionRadius 40
+      }
      }
     }
    }
@@ -1621,7 +2024,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords -166.134 8.79 463.742
+     coords -87.212 8.716 394.253
      angleX -8.303
      angleY 38.525
      angleZ -1.082
@@ -1631,9 +2034,65 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 411.435 -59.696 -287.795
+       coords 291.445 -53.494 -265.759
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    ChotainArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -790.484 -42.264 109.596
+     angleX 0.923
+     angleY -87.118
+     angleZ 3.992
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -71.322 49.185 -760.753
+       CompletionRadius 110
+      }
+     }
+    }
+    Chotain_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords -7.007 -0.647 17.834
+     angleX 0.934
+     angleY -114.097
+     angleZ 2.132
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 0 0 0
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -1669,29 +2128,125 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity DurrasCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 5
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    DurrasCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 5
+      }
+     }
+     coords 45.953 43.385 248.407
+     angleX -4.854
+     angleY 100.883
+     angleZ 0.931
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 269.222 -41.57 -2.889
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 62.086 70.583 314.729
-    angleX -4.854
-    angleY 100.883
-    angleZ 0.931
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    DurasArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 547.703 55.724 -84.408
+     angleX 1.655
+     angleY 17.865
+     angleZ 2.433
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -560.255 -77.959 -85.322
+       CompletionRadius 120
+      }
+     }
+    }
+    Durras_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 9.078 0.958 -92.986
+     angleX -1.201
+     angleY -51.5
+     angleZ -1.234
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 3.254 -0.267 5.376
+       angleY -46.938
+       CompletionRadius 50
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 303.227 -61.033 28.631
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+    }
+    Durras_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 42.646 5.232 41.932
+     angleX -1.201
+     angleY -51.5
+     angleZ -1.234
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -3.31 -1.86 9.749
+       angleY 109.593
+       CompletionRadius 80
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
      }
     }
    }
@@ -1727,29 +2282,88 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity EntreDeuxCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 5
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    EntreDeuxCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 5
+      }
+     }
+     coords 170.403 -25.229 -227.482
+     angleX -8.388
+     angleY 8.157
+     angleZ -1.331
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -209.636 61.64 208.526
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 206.249 -30.772 -335.505
-    angleX -8.388
-    angleY 8.157
-    angleZ -1.331
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    EntreDeuxArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -576.044 -120.252 -442.04
+     angleX 0.527
+     angleY 29.836
+     angleZ 0.142
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 272.933 114.798 690.714
+       CompletionRadius 100
+      }
+     }
+    }
+    EntreDeux_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords 3.253 0.299 18.748
+     angleX -1.775
+     angleY 12.044
+     angleZ -1.836
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -3.911 0.187 -0.235
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords -241.522 84.246 321.81
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -1782,29 +2396,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity FigariCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    FigariCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -223.769 33.794 176.788
+     angleX -6.49
+     angleY 176.976
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -225.127 -15.266 176.053
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords -480.112 23.938 264.049
-    angleX -6.49
-    angleY 176.976
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    FigariArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -514.04 22.599 -117.607
+     angleX 1.057
+     angleY 51.482
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 216.822 -25.052 485.604
+       CompletionRadius 110
+      }
+     }
+    }
+    Figari_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 11.127 0.293 16.151
+     angleY -178.943
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 5.378 0.234 -4.313
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords -473.236 4.916 286.113
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -1837,29 +2508,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LarunsCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LarunsCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -7.987 49.823 390.791
+     angleX -6.49
+     angleY -151.962
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -203.676 -13.225 333.927
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords -24.335 59.255 516.148
-    angleX -6.49
-    angleY -151.962
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    LarunsArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 158.86 50.774 599.446
+     angleX 1.057
+     angleY -132.077
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -355.37 -70.02 498.056
+       CompletionRadius 120
+      }
+     }
+    }
+    Laruns_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords -1.442 -0.767 11.176
+     angleY 55.588
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 17.606 1.087 10.004
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords -277.115 -10.055 451.068
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -1906,7 +2634,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords -364.742 7.557 -45.892
+     coords -220.615 14.29 -115.004
      angleX -10.402
      angleY -64.313
      angleZ -0.13
@@ -1916,7 +2644,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 241.705 -68.644 -332.973
+       coords 217.064 -42.758 -153.894
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -1932,7 +2660,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 4
       }
      }
-     coords 393.469 31.7 -129.225
+     coords 295.461 25.123 -78.418
      angleX -10.402
      angleY -64.313
      angleZ -0.13
@@ -1942,9 +2670,138 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -57.502 58.477 466.836
+       coords -38.703 47.98 268.864
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    LeMouleArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 499.827 -27.236 -449.872
+     angleX 3.059
+     angleY 167.736
+     angleZ 5.07
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 356.56 93.891 -537.989
+       CompletionRadius 100
+      }
+     }
+    }
+    LeMoule_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 66.148 2.554 70.866
+     angleX 3.231
+     angleY 143.224
+     angleZ 2.266
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 46.959 -1.434 24.735
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    LeMoule_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -128.536 3.95 21.21
+     angleX 3.231
+     angleY 143.224
+     angleZ 2.266
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -25.318 -0.809 -21.871
+       angleY -46.938
+       CompletionRadius 60
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    Richemont_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 633.349 55.547 523.671
+     angleX 3.231
+     angleY 143.224
+     angleZ 2.266
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 43.622 -4.614 2.951
+       angleY -46.938
+       CompletionRadius 70
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -1978,29 +2835,120 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LevieCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LevieCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 172.35 -14.695 157.14
+     angleX -6.49
+     angleY 73.066
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 95.769 -9.568 -224.319
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 172.35 -14.695 157.14
-    angleX -6.49
-    angleY 73.066
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    LevieArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 452.349 -20.038 491.063
+     angleX 1.057
+     angleY -52.428
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -686.024 -0.255 73.735
+       CompletionRadius 120
+      }
+     }
+    }
+    Levie_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords -0.946 2.898 -105.022
+     angleY -79.384
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 16.534 -0.224 19.54
+       angleY -46.938
+       CompletionRadius 70
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 95.769 -9.568 -224.319
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+    }
+    Levie_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -45.812 -1.093 86.645
+     angleY -79.384
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -63.849 1.065 -48.403
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
      }
     }
    }
@@ -2047,7 +2995,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords 469.476 28.034 -135.571
+     coords 374.535 13.915 -99.109
      angleX -6.405
      angleY -68.96
      angleZ 1.564
@@ -2057,7 +3005,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 12.842 15.701 418.693
+       coords -13.042 27.882 381.354
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -2073,7 +3021,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -720.331 4.638 -49.05
+     coords -565.712 24.921 57.827
      angleX -6.405
      angleY -68.96
      angleZ 1.564
@@ -2083,9 +3031,88 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 237.161 -62.795 -575.959
+       coords 143.157 -77.011 -532.813
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    MeauxArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 345.867 -1.975 599.242
+     angleX 1.057
+     angleY -129.491
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -163.062 -13.335 653.106
+       CompletionRadius 80
+      }
+     }
+    }
+    MeauxArty02 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 515.246 46.344 -462.858
+     angleX 1.959
+     angleY 165.742
+     angleZ 0.923
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 313.113 -18.152 -583.697
+       CompletionRadius 80
+      }
+     }
+    }
+    Meaux_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 34.076 -0.368 63.226
+     angleY -64.748
+     angleZ 1.169
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -39.977 -1.056 3.235
+       angleY 156.531
+       CompletionRadius 130
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -2176,6 +3203,120 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       }
      }
     }
+    MontignacArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 680.791 -34.71 -260.305
+     angleX 2.464
+     angleY -38.364
+     angleZ 0.881
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -396.423 9.087 546.069
+       CompletionRadius 130
+      }
+     }
+    }
+    MontignacArty02 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -661.783 -95.23 -362.64
+     angleX 2.463
+     angleY -38.448
+     angleZ 0.878
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 808.325 111.572 -137.331
+       CompletionRadius 140
+      }
+     }
+    }
+    Montignac_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 8.516 1.136 -15.313
+     angleX -0.288
+     angleY 91.148
+     angleZ 1.586
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 4.162 0.738 -17.252
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    Montignac_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 126.737 -1.671 -20.519
+     angleX -0.288
+     angleY 91.148
+     angleZ 1.586
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 7.572 0.952 7.422
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
    }
   }
  }
@@ -2243,7 +3384,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords 379.361 -8.476 -146.431
+     coords 257.574 -4.597 -136.625
      angleX -6.49
      angleY -13.934
      angleZ 0.391
@@ -2253,10 +3394,132 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -314.344 11.263 92.133
+       coords -211.61 20.607 165.568
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
        CompletionRadius 75
+      }
+     }
+    }
+    ProvinsArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -414.648 -45.626 -442.867
+     angleX 2.464
+     angleY -48.217
+     angleZ 0.881
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 572.287 52.101 40.859
+       CompletionRadius 100
+      }
+     }
+    }
+    Provins_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -106.857 -1.538 -1.367
+     angleY -166.384
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -32.181 0.801 -7.711
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    Provins_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 23.747 -6.806 -179.348
+     angleY -166.384
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -6.115 1.035 -44.427
+       angleY -46.938
+       CompletionRadius 60
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    CowbellPond_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -421.806 -15.236 319.895
+     angleY -166.384
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -66.633 -3.925 52.869
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -2302,7 +3565,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords 379.694 9.686 -83.658
+     coords 291.447 1.351 -90.016
      angleX -6.49
      angleY -4.165
      angleZ 0.391
@@ -2312,7 +3575,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -427.258 4.846 147.507
+       coords -334.578 15.07 159.227
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -2328,7 +3591,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -281.056 2.805 291.365
+     coords -238.467 16.333 236.981
      angleX -6.49
      angleY -4.165
      angleZ 0.391
@@ -2338,9 +3601,98 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 210.398 -21.848 -190.326
+       coords 161.359 -37.339 -198.617
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    ReginaArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -193.82 -22.722 562.306
+     angleX 1.057
+     angleY -129.575
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -508.332 3.969 227.177
+       CompletionRadius 80
+      }
+     }
+    }
+    Regina_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 60.255 2.367 213.146
+     angleY -156.615
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 10.969 0.036 19.119
+       angleY -46.938
+       CompletionRadius 50
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    Regina_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords -92.271 1.483 45.463
+     angleY -156.615
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -33.25 -0.862 -12.53
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -2411,7 +3763,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords -301.853 3.736 370.179
+     coords -212.259 -0.706 280.362
      angleX -6.49
      angleY -44.929
      angleZ 0.391
@@ -2421,9 +3773,99 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords -26.842 -52.155 -499.766
+       coords -42.484 -39.352 -355.379
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
+     }
+    }
+    TyroneArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 50.413 44.54 -482.798
+     angleX 1.057
+     angleY -170.423
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 134.542 -32.117 -477.015
+       CompletionRadius 100
+      }
+     }
+    }
+    Tyrone_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -75.533 -2.08 37.978
+     angleY 162.621
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -2.253 -0.097 20.967
+       angleY -46.938
+       CompletionRadius 60
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    Tyrone_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 47.469 4.438 -35.764
+     angleY 162.621
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 16.002 -3.48 -41.629
+       angleY -46.938
+       CompletionRadius 80
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
       }
      }
     }
@@ -2460,30 +3902,125 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity VernonCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    VernonCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -137.979 43.644 -163.284
+     angleX -6.432
+     angleY 151.931
+     angleZ -1.037
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -147.271 -58.173 -110.401
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords -137.979 43.644 -163.284
-    angleX -6.432
-    angleY 151.931
-    angleZ -1.037
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    VernonArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 450.515 25.771 -158.747
+     angleX -0.131
+     angleY 26.283
+     angleZ 2.445
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -572.436 -49.69 -88.746
+       CompletionRadius 100
+      }
+     }
+    }
+    Vernon_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -178.204 -4.144 12.635
+     angleX -0.706
+     angleY -0.687
+     angleZ 1.232
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 31.78 -0.53 -3.3
+       angleY -46.938
+       CompletionRadius 60
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords -147.271 -58.173 -110.401
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
+     }
+    }
+    Vernon_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -25.891 -1.915 -14.033
+     angleX -0.706
+     angleY -0.687
+     angleZ 1.232
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 1.692 0.22 15.834
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
      }
     }
    }
@@ -2517,29 +4054,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity VilleneufCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    VilleneufCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 4
+      }
+     }
+     coords 333.083 -10.906 -20.647
+     angleX -6.49
+     angleY 27.604
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -341.071 -11.229 -183.675
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 333.083 -10.906 -20.647
-    angleX -6.49
-    angleY 27.604
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    VilleneufArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 534.942 13.644 -178.428
+     angleX -0.131
+     angleY 57.968
+     angleZ 2.445
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -446.172 -32.729 -419.239
+       CompletionRadius 100
+      }
+     }
+    }
+    Villeneuf_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords -55.893 1.111 -32.336
+     angleY 31.685
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 0.274 -0.566 25.961
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords -341.071 -11.229 -183.675
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -2573,29 +4167,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity GravetteCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    GravetteCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 4
+      }
+     }
+     coords 169.205 17.466 -219.101
+     angleX -6.49
+     angleY -39.759
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 64.505 26.013 332.825
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords 169.205 17.466 -219.101
-    angleX -6.49
-    angleY -39.759
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    GravetteArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -119.04 43.947 759.315
+     angleX 1.057
+     angleY 15.804
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 300.622 -22.539 -671.485
+       CompletionRadius 110
+      }
+     }
+    }
+    Gravette_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 2.298 1.502 40.868
+     angleY 167.791
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -15.591 0.817 12.168
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 64.505 26.013 332.825
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -2629,12 +4280,47 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
+   GenericEntity Kermovan_CIV_1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    components {
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      m_eGroupType TEAM_CIV_SMALL
+     }
+    }
+    coords 47.438 -5.151 -1.97
+    angleX -1.224
+    angleY 62.605
+    angleZ 0.634
+    {
+     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+      components {
+       Hierarchy "{64474224ADFA3496}" {
+       }
+      }
+      coords -0.272 0.142 -17.451
+      angleY -46.938
+      m_aDefendPresets {
+       SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+        m_bUseTurrets 0
+       }
+      }
+     }
+    }
+   }
   }
  }
  SmallBaseLesCreux {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -2659,30 +4345,88 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0 0.001 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LesCreuxCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LesCreuxCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 269.41 -5.423 253.813
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 91.219 47.313 362.318
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords 269.41 -5.423 253.813
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    LesCreuxArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 426.927 -11.567 -287.184
+     angleX 8.315
+     angleY 88.572
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -306.345 60.835 -425.939
+       CompletionRadius 70
+      }
+     }
+    }
+    LesCreux_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -9.432 0.033 -2.406
+     angleY 60.86
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -3.071 -0.023 -1.3
+       angleY -46.938
+       CompletionRadius 70
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 91.219 47.313 362.318
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
      }
     }
    }
@@ -2691,7 +4435,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseStPhillipeFactory {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -2721,7 +4465,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseRedon {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -2746,29 +4490,53 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0 -0.001 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity RedonCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    RedonCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -54.177 39.386 516.487
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -317.012 5.477 420.449
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords -54.177 39.386 516.487
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    RedonArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -317.012 5.477 420.449
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+     coords 352.305 15.311 629.315
+     angleX 1.057
+     angleY -54.793
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -724.831 -36.083 -52.588
+       CompletionRadius 100
+      }
      }
     }
    }
@@ -2777,7 +4545,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseKervel {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -2797,30 +4565,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity KervelCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    KervelCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -235.324 18.266 324.175
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -372.162 -3.978 148.961
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords -235.324 18.266 324.175
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    KervelArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -372.162 -3.978 148.961
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
+     }
+     coords -17.105 3.203 -518.252
+     angleX 8.315
+     angleY 54.637
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -426.377 -63.503 286.479
+       CompletionRadius 60
+      }
      }
     }
    }
@@ -2829,7 +4621,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseFiringRange {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 140
+    m_fBuildingRadius 130
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 140
@@ -2864,7 +4656,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 5
      }
     }
-    coords -207.46 2.541 -318.041
+    coords -154.916 10.424 -238.08
     angleX -6.49
     angleY -146.69
     angleZ 0.391
@@ -2874,9 +4666,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 29.213 -42.077 -347.682
+      coords 50.748 -39.278 -253.01
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 80
      }
     }
    }
@@ -2888,6 +4681,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_fBuildingRadius 100
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 120
     m_bIsControlPoint 1
     m_sBaseName "Benac"
     m_sBaseNameUpper "BENAC"
@@ -2909,29 +4703,53 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0 0 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity BenacCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    BenacCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -60.166 -14.7 -343.704
+     angleX -6.49
+     angleY 175.984
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -108.163 -19.812 -321.075
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords -60.166 -14.7 -343.704
-    angleX -6.49
-    angleY 175.984
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    BenacArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -108.163 -19.812 -321.075
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+     }
+     coords 514.835 42.367 -298.609
+     angleX 8.315
+     angleY -67.577
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 73.779 -118.781 556.161
+       CompletionRadius 45
+      }
      }
     }
    }
@@ -2940,7 +4758,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseScythe {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 140
+    m_fBuildingRadius 130
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 140
@@ -2965,7 +4783,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBasePerelle {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -2993,29 +4811,88 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity PerelleCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    PerelleCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 191.405 32.749 69.469
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 143.714 -13.313 184.55
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
      }
     }
-    coords 229.143 49.514 137.081
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    PerelleArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 272.63 97.586 424.13
+     angleX 1.057
+     angleY -54.793
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -529.014 -113.313 2.07
+       CompletionRadius 55
+      }
+     }
+    }
+    Perelle_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords -11.822 -0.209 13.582
+     angleY 60.86
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 3.771 -1.942 -12.868
+       angleY -46.938
+       CompletionRadius 60
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 125.845 -21.588 253.272
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -3024,7 +4901,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseLancre {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 130
+    m_fBuildingRadius 120
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 130
@@ -3052,30 +4929,88 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LancreCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LancreCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 319.051 27.34 -56.734
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 268.966 -14.581 91.345
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
      }
     }
-    coords 403.383 46.034 -112.247
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    LancreArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 373.647 26.558 -181.635
+     angleX 8.315
+     angleY 54.637
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -356.269 -11.295 -152.673
+       CompletionRadius 70
+      }
+     }
+    }
+    Lancre_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_MEDIUM
+      }
+     }
+     coords 18.576 0.731 21.12
+     angleY 60.86
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 2.737 -0.026 5.324
+       angleY -46.938
+       CompletionRadius 80
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 389.103 -31.69 99.138
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 60
      }
     }
    }
@@ -3087,7 +5022,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_fBuildingRadius 120
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
-    m_iRadius 120
+    m_iRadius 125
     m_bIsControlPoint 1
     m_sBaseName "Cave"
     m_sBaseNameUpper "CAVE"
@@ -3118,7 +5053,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 5
      }
     }
-    coords 323.016 -20.375 76.431
+    coords 256.599 4.184 79.041
     angleX -6.49
     angleY -146.69
     angleZ 0.391
@@ -3128,9 +5063,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 256.073 45.288 226.424
+      coords 208.885 30.172 204.15
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 70
      }
     }
    }
@@ -3142,6 +5078,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_fBuildingRadius 100
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 120
     m_bIsControlPoint 1
     m_sBaseName "Cheval Gin Lodge"
     m_sBaseNameUpper "CHEVAL GIN LODGE"
@@ -3172,7 +5109,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 4
      }
     }
-    coords 225.047 -50.843 -157.534
+    coords 178.036 -39.687 -93.691
     angleX -6.49
     angleY 96.835
     angleZ 0.391
@@ -3182,7 +5119,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords -129.3 25.564 -225.692
+      coords -79.103 20.593 -169.149
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       CompletionRadius 30
@@ -3194,7 +5131,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseGhostTown {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 100
+    m_fBuildingRadius 95
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_bIsControlPoint 1
@@ -3228,7 +5165,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 4
      }
     }
-    coords -168.519 22.503 -216.439
+    coords -104.558 27.899 -192.856
     angleX -6.49
     angleY -42.496
     angleZ 0.391
@@ -3238,9 +5175,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords 260.183 -9.735 82.45
+      coords 198.918 -17.461 80.166
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 70
      }
     }
    }
@@ -3272,12 +5210,178 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    StPierreCounter01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 6
+      }
+     }
+     coords 72.868 7.786 406.54
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -154.381 37.489 410.444
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 200
+      }
+     }
+    }
+    StPierreCounter02 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -165.041 63.436 -424.79
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 61.89 -114.169 -451.843
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 200
+      }
+     }
+    }
+    StPierreArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -852.96 9.422 460.969
+     angleX 1.057
+     angleY 87.816
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 531.529 -8.934 812.986
+       CompletionRadius 140
+      }
+     }
+    }
+    StPierreArty2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords 47.378 -10.318 694.59
+     angleX 1.057
+     angleY -54.793
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -613.867 1.632 -383.543
+       CompletionRadius 120
+      }
+     }
+    }
+    StPierre_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords 74.14 7.319 -11.192
+     angleY -142.609
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 5.409 -1.965 1.246
+       angleY 156.531
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+    StPierre_CIV_2 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV
+      }
+     }
+     coords -116.448 -3.174 2.039
+     angleY 60.86
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords -18.204 -0.307 -22.413
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
  SmallBaseLaRoueBay {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -3297,30 +5401,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LaRoueCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LaRoueCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -242.278 57.879 -118.182
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -109.153 -83.364 -219.753
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 70
+      }
      }
     }
-    coords -242.278 57.879 -118.182
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    LaRoueArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords -109.153 -83.364 -219.753
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 70
+     }
+     coords -391.994 42.81 174.119
+     angleX 8.315
+     angleY -87.972
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -157.372 7.5 -392.717
+       CompletionRadius 55
+      }
      }
     }
    }
@@ -3329,7 +5457,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseMontfortCastle {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -3411,13 +5539,35 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       }
      }
     }
+    MontfortCastleArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -28.565 -61.909 573.043
+     angleX 1.057
+     angleY 87.816
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 546.428 85.272 -14.807
+       CompletionRadius 65
+      }
+     }
+    }
    }
   }
  }
  SmallBaseRockweedCape {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 110
+    m_fBuildingRadius 100
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 110
@@ -3473,7 +5623,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseLeBosc {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -3487,7 +5637,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
    }
   }
   coords 7896.114 10.121 1456.076
-  angleY 29.046
+  angleY 40.847
   {
    GenericEntity {
     ID "5CCED514A5908822"
@@ -3497,30 +5647,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity LeBoscCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 4
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    LeBoscCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 4
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -292.422 27.556 -119.423
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords -168.604 -56.32 -266.344
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords 67.343 32.814 -280.176
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    LeBoscArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords 227.186 -48.197 -177.351
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
+     }
+     coords -287.077 130.632 263.713
+     angleX 8.315
+     angleY -128.819
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -387.299 -129.829 -116.07
+       CompletionRadius 40
+      }
      }
     }
    }
@@ -3529,7 +5703,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseThollevast {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 400
+    m_fBuildingRadius 375
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 400
@@ -3566,12 +5740,46 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
+   GenericEntity Thollevast_CIV_1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    components {
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      m_eGroupType TEAM_CIV_SMALL
+     }
+    }
+    coords -174.713 -1.396 64.798
+    angleY 60.86
+    {
+     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+      components {
+       Hierarchy "{64474224ADFA3496}" {
+       }
+      }
+      coords -3.379 -0.115 -5.54
+      angleY -46.938
+      CompletionRadius 80
+      m_aDefendPresets {
+       SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+        m_bUseTurrets 0
+       }
+       SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+        m_bUseTurrets 0
+       }
+      }
+     }
+    }
+   }
   }
  }
  SmallBaseArgent {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 250
+    m_fBuildingRadius 225
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 250
@@ -3580,7 +5788,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sBaseNameUpper "ARGENT"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 250
+    m_iRadius 225
     m_bIgnoreNonPlayableAttackers 0
    }
   }
@@ -3599,11 +5807,17 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  }
  SmallBaseErquy {
   components {
+   SCR_CampaignBuildingProviderComponent "{64AC3B5DD47918A0}" {
+    m_fBuildingRadius 150
+   }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 160
     m_bIsControlPoint 1
     m_sBaseName "Erquy"
     m_sBaseNameUpper "ERQUY"
+   }
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 150
    }
   }
   coords 10923.335 25.03 11718.213
@@ -3617,29 +5831,86 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     ID "5C6696731466AF36"
     m_bSpawnPointEnabled 0
    }
-   GenericEntity IslandErquyCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 4
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    IslandErquyCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 4
+      }
+     }
+     coords -321.658 -7.072 -58.446
+     angleX 4.864
+     angleY 78.468
+     angleZ 4.32
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 3.724 -21.365 335.413
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      }
      }
     }
-    coords -421.357 -10.244 -78.788
-    angleX 4.864
-    angleY 78.468
-    angleZ 4.32
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
+    ErquyArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
+      }
+     }
+     coords -344.914 -4.388 292.539
+     angleX 8.315
+     angleY 7.205
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 373.989 56.373 -250.328
+       CompletionRadius 140
+      }
+     }
+    }
+    Erquy_CIV_1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_CIV_SMALL
+      }
+     }
+     coords 5.565 -0.202 14.898
+     angleY 60.86
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{64474224ADFA3496}" {
+        }
+       }
+       coords 5.848 0.109 1.59
+       angleY -46.938
+       m_aDefendPresets {
+        SCR_DefendWaypointPreset "{61B0C34477FB8F5E}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C34408A0DE30}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FD0D47A0}" {
+         m_bUseTurrets 0
+        }
+        SCR_DefendWaypointPreset "{61B0C344FEE90716}" {
+         m_bUseTurrets 0
+        }
        }
       }
-      coords 19.048 -25.476 431.333
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
      }
     }
    }
@@ -3647,10 +5918,17 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  }
  SmallBaseErquyLighthouse {
   components {
+   SCR_CampaignBuildingProviderComponent "{64AC3B5D08E3D357}" {
+    m_fBuildingRadius 100
+   }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 120
     m_bIsControlPoint 1
     m_sBaseName "Erquy Lighthouse"
     m_sBaseNameUpper "ERQUY LIGHTHOUSE"
+   }
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
    }
   }
   coords 11347.524 62.473 11237.517
@@ -3676,6 +5954,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_fBuildingRadius 100
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 125
     m_bIsControlPoint 1
     m_sBaseName "Etoupe Gas Station"
     m_sBaseNameUpper "ETOUPE GAS STATION"
@@ -3704,30 +5983,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0.001 -0.001 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity EtoupeGasStationCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 2
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    EtoupeGasStationCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 2
+       m_iGroupMultiplier 3
+      }
+     }
+     coords 439.186 26.737 127.854
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 294.274 15.095 345.416
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords 439.186 26.737 127.854
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    EtoupeGasStationArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords 294.274 15.095 345.416
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
+     }
+     coords 118.07 23.427 554.947
+     angleX 8.315
+     angleY 7.205
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -64.382 53.263 -540.646
+       CompletionRadius 75
+      }
      }
     }
    }
@@ -3736,7 +6039,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseSmugglersHole {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 200
+    m_fBuildingRadius 190
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 200
@@ -3793,7 +6096,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBasePins {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 600
+    m_fBuildingRadius 575
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 600
@@ -3823,7 +6126,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseFishermansCove {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 180
+    m_fBuildingRadius 170
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 180
@@ -3883,6 +6186,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_fBuildingRadius 100
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 120
     m_bIsControlPoint 1
     m_sBaseName "Courbet"
     m_sBaseNameUpper "COURBET"
@@ -3917,7 +6221,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
       m_iGroupMultiplier 5
      }
     }
-    coords -374.808 110.837 -192.123
+    coords -225.28 53.47 -159.996
     angleX -6.49
     angleY -146.69
     angleZ 0.391
@@ -3927,9 +6231,10 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        Hierarchy "{5CD0765889102122}" {
        }
       }
-      coords -198.148 -154.36 -335.149
+      coords -121.94 -80.724 -261.432
       angleY -54.336
       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+      CompletionRadius 50
      }
     }
    }
@@ -3974,7 +6279,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 3
       }
      }
-     coords 14.221 27.145 -371.703
+     coords -46.737 23.032 -265.137
      angleX -6.49
      angleY -57.236
      angleZ 0.391
@@ -3984,7 +6289,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 295.992 7.647 293.708
+       coords 234.488 -2.121 164.127
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -4000,7 +6305,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
        m_iGroupMultiplier 5
       }
      }
-     coords -387.691 21.307 222.666
+     coords -346.104 17.247 195.891
      angleX -6.49
      angleY -57.236
      angleZ 0.391
@@ -4010,7 +6315,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
         Hierarchy "{5CD0765889102122}" {
         }
        }
-       coords 37.445 -70.099 -416.699
+       coords 3.884 -51.32 -322.052
        angleY -54.336
        AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
       }
@@ -4022,7 +6327,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseCragPoint {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -4031,7 +6336,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     m_sBaseNameUpper "CRAG POINT"
    }
    SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
-    m_iRadius 120
+    m_iRadius 110
     m_bIgnoreNonPlayableAttackers 0
    }
   }
@@ -4047,30 +6352,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0 -0.001 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity CragPointCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 3
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    CragPointCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 3
+      }
+     }
+     coords -19.157 19.026 -317.76
+     angleX -6.49
+     angleY -146.69
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 141.812 -48.748 -266.898
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 60
+      }
      }
     }
-    coords -110.118 12.755 -456.184
-    angleX -6.49
-    angleY -146.69
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    CragPointArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords 161.575 -60.777 -432.776
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 60
+     }
+     coords 49.658 50.581 -382.691
+     angleX 8.315
+     angleY 149.814
+     angleZ 2.465
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords -156.037 -8.239 -342.27
+       CompletionRadius 45
+      }
      }
     }
    }
@@ -4079,7 +6408,7 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  SmallBaseSkuaPoint {
   components {
    SCR_CampaignBuildingProviderComponent "{5CA897160F09AA9F}" {
-    m_fBuildingRadius 120
+    m_fBuildingRadius 110
    }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
     m_iRadius 120
@@ -4108,30 +6437,54 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     coords 0 0.001 0
     m_bSpawnPointEnabled 0
    }
-   GenericEntity SkuaPointCounter1 : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
-    components {
-     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-      m_eGroupType FIRETEAM
-      m_iRespawnPeriod 30
-      m_fAILimitThreshold 0.95
-      m_iRespawnWaves 3
-      m_iGroupMultiplier 5
+   $grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    SkuaPointCounter1 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType FIRETEAM
+       m_iRespawnPeriod 30
+       m_fAILimitThreshold 0.95
+       m_iRespawnWaves 3
+       m_iGroupMultiplier 5
+      }
+     }
+     coords -235.648 -1.178 43.307
+     angleX -6.49
+     angleY 92.724
+     angleZ 0.391
+     {
+      SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
+       components {
+        Hierarchy "{5CD0765889102122}" {
+        }
+       }
+       coords 51.004 25.292 247.642
+       angleY -54.336
+       AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+       CompletionRadius 80
+      }
      }
     }
-    coords -235.648 -1.178 43.307
-    angleX -6.49
-    angleY 92.724
-    angleZ 0.391
-    {
-     SCR_DefendWaypoint : "{2A81753527971941}Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et" {
-      components {
-       Hierarchy "{5CD0765889102122}" {
-       }
+    SkuaArty01 {
+     components {
+      SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+       m_eGroupType TEAM_MORTAR_USSR
+       m_bIsArtilleryGroup 1
       }
-      coords 51.004 25.292 247.642
-      angleY -54.336
-      AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
-      CompletionRadius 80
+     }
+     coords -578.408 -12.041 -138.843
+     angleX 1.057
+     angleY -32.77
+     angleZ 1.667
+     {
+      SCR_AIWaypointArtillerySupport : "{C524700A27CFECDD}Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et" {
+       components {
+        Hierarchy "{632E369FF8F5D9C5}" {
+        }
+       }
+       coords 569.993 27.545 -220.248
+       CompletionRadius 80
+      }
      }
     }
    }
@@ -4139,8 +6492,11 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
  }
  SmallBaseWesternHeights {
   components {
+   SCR_CampaignBuildingProviderComponent "{64AC3B5C03045BC5}" {
+    m_fBuildingRadius 150
+   }
    SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
-    m_iRadius 160
+    m_iRadius 175
     m_bIsControlPoint 1
     m_sBaseName "Western Heights"
     m_sBaseNameUpper "WESTERN HEIGHTS"
@@ -4342,7 +6698,6 @@ GenericEntity : "{1A7FB3493A1B029F}Prefabs/Compositions/Locations/Eden/Base_Levi
     SCR_SpawnPoint {
      ID "5E6ACA2FF8E39F2B"
      Flags 1048579
-     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -5034,7 +7389,6 @@ $grp GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRel
      components {
       SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
        m_eGroupType FIRETEAM
-       m_bPickRandomGroupType 1
        m_iGroupMultiplier 2
       }
      }
@@ -5128,15 +7482,6 @@ GenericEntity : "{567515087F8ED05F}Prefabs/Compositions/Locations/Eden/Base_Lame
     }
    }
   }
-  GenericEntity {
-   ID "5E6ACA2FCDBBBC12"
-   {
-    SCR_SpawnPoint {
-     ID "5E6ACA2FF8E39F2B"
-     m_bSpawnPointEnabled 0
-    }
-   }
-  }
  }
 }
 GenericEntity : "{A9F3C4994839F7A4}Prefabs/Compositions/Locations/Eden/Base_StPierreHarbour_FIA_01.et" {
@@ -5197,7 +7542,6 @@ GenericEntity : "{A9F3C4994839F7A4}Prefabs/Compositions/Locations/Eden/Base_StPi
     SCR_SpawnPoint {
      ID "5E6ACA2FF8E39F2B"
      Flags 1048579
-     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -5248,7 +7592,6 @@ GenericEntity : "{D3BED8377828FFCC}Prefabs/Compositions/Locations/Eden/Base_Powe
     SCR_SpawnPoint {
      ID "5E6ACA2FF01AEC42"
      Flags 1048579
-     m_bSpawnPointEnabled 0
     }
    }
   }
@@ -5325,7 +7668,6 @@ GenericEntity : "{FB04C4D5947808F1}Prefabs/Compositions/Locations/Eden/Base_Mont
   SCR_SpawnPoint {
    ID "5E6B01A974EBE91B"
    Flags 1048579
-   m_bSpawnPointEnabled 0
   }
  }
 }

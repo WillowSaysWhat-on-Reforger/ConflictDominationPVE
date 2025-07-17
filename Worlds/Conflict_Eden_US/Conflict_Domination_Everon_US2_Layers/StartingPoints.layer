@@ -536,8 +536,8 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   {
    GenericEntity {
     ID "5CCED514A5908822"
-    coords -0.001 0.364 12
     Flags 2097155
+    coords -0.001 0.364 12
    }
   }
  }
@@ -568,8 +568,8 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
   {
    GenericEntity {
     ID "5CCED514A5908822"
-    coords -0.001 0.377 11.999
     Flags 2097155
+    coords -0.001 0.377 11.999
    }
   }
  }
@@ -604,14 +604,14 @@ $grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMil
     "faction affiliation" "USSR"
    }
   }
+  Flags 524291
   coords 377.14 99.765 534.736
   angleY -174.33
-  Flags 524291
   {
    GenericEntity {
     ID "5CCED514A5908822"
-    coords 8.839 0.008 0.308
     Flags 2097155
+    coords 8.839 0.008 0.308
    }
    SCR_CampaignSpawnPointGroup {
     ID "5C6696731466AF36"

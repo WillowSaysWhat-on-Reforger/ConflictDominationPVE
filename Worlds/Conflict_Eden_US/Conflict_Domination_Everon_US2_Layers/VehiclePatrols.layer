@@ -1,5 +1,5 @@
 $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_USSR.et" {
- USSRVehicleSpawnCoastStPhillipe {
+ USSRVehicleSpawnStPhillipeBTR {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -49,7 +49,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandAirfield {
+ USSRVehicleSpawnAirfieldUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -93,7 +93,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnCoastStPierre {
+ USSRVehicleSpawnStPierreBTR {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -141,7 +141,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnCoastLamentin {
+ USSRVehicleSpawnLamentinUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -187,7 +187,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnCoastMorton {
+ USSRVehicleSpawnMortonBTR {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -233,7 +233,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnCoastMeaux {
+ USSRVehicleSpawnMeauxUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -277,7 +277,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandChotain {
+ USSRVehicleSpawnChotainUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -311,17 +311,17 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
        coords 118.069 -19.805 250.336
       }
       {
-       coords 317.893 -24.255 251.143
+       coords 294.167 -22.273 255.785
       }
       {
-       coords 261.651 -21.808 55.108
+       coords 306.295 -23.943 57.873
       }
      }
     }
    }
   }
  }
- USSRVehicleSpawnInlandLevieMilitary {
+ USSRVehicleSpawnLevieMilitaryBTR {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -375,7 +375,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandFigari {
+ USSRVehicleSpawnFigariUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -419,7 +419,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandRichemont {
+ USSRVehicleSpawnRichemontUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -463,7 +463,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandCalvaryHill {
+ USSRVehicleSpawnCalvaryHillUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -504,7 +504,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandMontignac2 {
+ USSRVehicleSpawnMontignacUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -556,7 +556,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandMontignac {
+ USSRVehicleSpawnMontignacBTR {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {
@@ -606,7 +606,7 @@ $grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientV
    }
   }
  }
- USSRVehicleSpawnInlandRegina {
+ USSRVehicleSpawnReginaUAZ {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
     m_aIncludedEditableEntityLabels {

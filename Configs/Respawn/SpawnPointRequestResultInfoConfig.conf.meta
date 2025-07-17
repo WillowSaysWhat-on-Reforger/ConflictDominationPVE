@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{6DD58790690E9D29}Missions/ConflictPVERemixedVanilla2_US.conf"
+ Name "{A39BE59EB6F41125}Configs/Respawn/SpawnPointRequestResultInfoConfig.conf"
  Configurations {
   CONFResourceClass PC {
   }
